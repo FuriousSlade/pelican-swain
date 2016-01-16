@@ -1,0 +1,47 @@
+body,
+html {
+    height: 100%;
+    padding-top: 25px;
+}
+
+#container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -20px;/*margin-bottom的负值等于footer高度*/
+}
+
+
+/*Fotter*/
+.push,
+#footer {
+    border-top: 1px solid #00FFFF;
+    height: 20px;
+    clear: both;
+}
+ul.footer-content {
+    list-style: none;
+    margin: -1px 0 0 0;
+    padding: 2px 5px 0;
+    display: table;
+    height: 45px;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul.footer-content li {
+    padding-left: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+.elegant-power {
+    text-align: right;
+}
+.elegant-license {
+    text-align: left;
+}
+.elegant-subtitle {
+    text-align: left;
+}
