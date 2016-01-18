@@ -50,14 +50,17 @@
     <!-- navbar end -->
     <div class="container-fluid" id="container">
         <div class="row-fluid">
-            <div class="col-md-2">
-
+            <div class="col-md-2" id="sidebar_left">
+                {% block sidebar_left %}
+                {% endblock sidebar_left %}
             </div>
             <div class="col-md-8">
-<!--                 {% block content %}
-                {% endblock content %} -->
+                {% block content %}
+                {% endblock content %}
             </div>
             <div class="col-md-2">
+                {% block sidebar_right %}
+                {% endblock sidebar_right %}
             </div>
         </div>
         <div id="push"></div>

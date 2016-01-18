@@ -12,6 +12,25 @@ html {
 }
 
 
+/*sidebar_left*/
+#sidebar_left {
+    margin-top: 20px;
+}
+.list-inline li {
+    padding-right: 0;
+}
+.list-inline i {
+    font-size: 1.3em;
+}
+#sidebar_left > div > div.panel-body > ul > li > div {
+    height: 220px;
+    width: 200px;
+}
+#sidebar_left > div > div.panel-body > ul > li > div > h3 {
+    text-align:center;
+}
+
+
 /*Fotter*/
 .push,
 #footer {

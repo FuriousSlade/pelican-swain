@@ -1,5 +1,9 @@
 {% extends "base.html" %}
-{% block content_title %}{% endblock %}
+
+{% block sidebar_left %}
+    {% include '_includes/dashboard.html' %}
+{% endblock sidebar_left %}
+
 {% block content %}
 <section id="content" class="div">
 <h2>Pages</h2>
