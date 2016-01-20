@@ -10,10 +10,15 @@ html {
     height: 100%;
     margin: 0 auto -20px;/*margin-bottom的负值等于footer高度*/
 }
-/*img {
-    height: 100%;
-    width: 100%;
-}*/
+
+/*article*/
+#content > article > hr {
+    border:3px dotted #F00;
+    border-bottom:0;
+    border-right:0;
+    border-left:0;
+    width:100%;
+}
 
 /*sidebar_left*/
 #sidebar_left {
@@ -32,7 +37,9 @@ html {
 #sidebar_left > div > div.panel-body > ul > li > div > h3 {
     text-align:center;
 }
-
+#sidebar_left > div > div.panel-heading > i {
+    font-size: 1.5em;
+}
 /*sidebar_right*/
 #sidebar_right {
     margin-top: 20px;
