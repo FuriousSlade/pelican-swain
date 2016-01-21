@@ -14,7 +14,7 @@ html {
 
 /*post-list*/
 #posts-list > li > article > div.row > div.comment-count.col-md-3 {
-    padding-top: 1em;
+    padding-top: 0.5em;
 }
 #posts-list > li > article > div.row > div.comment-count.col-md-3 > i {
     padding-right: 5px;
