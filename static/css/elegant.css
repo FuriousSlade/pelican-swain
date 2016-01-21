@@ -11,6 +11,15 @@ html {
     margin: 0 auto -20px;/*margin-bottom的负值等于footer高度*/
 }
 
+/*post-list*/
+#posts-list > li > article > div.row > div.comment-count.col-md-3 {
+    padding-top: 1em;
+}
+#posts-list > li > article > div.row > div.comment-count.col-md-3 > i {
+    padding-right: 5px;
+    font-size: 1.5em;
+}
+
 /*article*/
 #content > article > hr {
     border:3px dotted #F00;
@@ -18,6 +27,9 @@ html {
     border-right:0;
     border-left:0;
     width:100%;
+}
+#content > article > div.comments {
+    margin-top: 50px;
 }
 
 /*sidebar_left*/
