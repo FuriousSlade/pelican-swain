@@ -11,6 +11,7 @@ html {
     margin: 0 auto -20px;/*margin-bottom的负值等于footer高度*/
 }
 
+<<<<<<< HEAD
 /*post-list*/
 #posts-list > li > article > div.row > div.comment-count.col-md-3 {
     padding-top: 1em;
@@ -20,6 +21,8 @@ html {
     font-size: 1.5em;
 }
 
+=======
+>>>>>>> 770bd6bd4a40f259420cd8b9401ef2c594f5176d
 /*article*/
 #content > article > hr {
     border:3px dotted #F00;
@@ -28,9 +31,12 @@ html {
     border-left:0;
     width:100%;
 }
+<<<<<<< HEAD
 #content > article > div.comments {
     margin-top: 50px;
 }
+=======
+>>>>>>> 770bd6bd4a40f259420cd8b9401ef2c594f5176d
 
 /*sidebar_left*/
 #sidebar_left {
