@@ -23,7 +23,7 @@ html {
 
 
 /*article*/
-#content > article > hr {
+hr {
     border:3px dotted #F00;
     border-bottom:0;
     border-right:0;
@@ -34,7 +34,18 @@ html {
     margin-top: 50px;
 }
 
+/*archives*/
+#post-row {
 
+}
+#archives-list {
+    margin-top: 10px;
+    /*border-bottom: 1px dashed blue;*/
+}
+
+#archives-year-icon {
+    padding-right: 5px;
+}
 /*sidebar_left*/
 #sidebar_left {
     margin-top: 20px;
