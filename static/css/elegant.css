@@ -1,18 +1,22 @@
 body,
 html {
     height: 100%;
+    width: 100%;
     padding-top: 25px;
 }
 
 #container {
     min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -20px;/*margin-bottom的负值等于footer高度*/
+    margin-bottom: -30px;
 }
 
 
 /*post-list*/
+#posts-list > li > article > div.entry-content > p > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 #posts-list > li > article > div.row > div.comment-count.col-md-3 {
     padding-top: 0.5em;
 }
@@ -34,18 +38,7 @@ hr {
     margin-top: 50px;
 }
 
-/*archives*/
-#post-row {
 
-}
-#archives-list {
-    margin-top: 10px;
-    /*border-bottom: 1px dashed blue;*/
-}
-
-#archives-year-icon {
-    padding-right: 5px;
-}
 /*sidebar_left*/
 #sidebar_left {
     margin-top: 20px;
@@ -76,15 +69,15 @@ hr {
 .push,
 #footer {
     border-top: 1px solid #00FFFF;
-    height: 20px;
+    height: 30px;
     clear: both;
 }
 ul.footer-content {
     list-style: none;
     margin: -1px 0 0 0;
-    padding: 2px 5px 0;
+    padding: 5px 5px 0;
     display: table;
-    height: 45px;
+    height: 30px;
     width: 100%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

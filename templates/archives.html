@@ -6,26 +6,24 @@ All Posts · {{ super() }}
 
 
 {% block content %}
-
 <div class="row">
-    <div class="col-md-2 text-center">
-    <h1><a href="{{ SITEURL }}/archives.html">All Posts</a></h1>
-    </div>
+    <header class="text-center">
+    <h1>All Posts</h1>
+    </header>
 </div>
 <hr>
 {% set last_year = 0 %}
 {% for article in dates %}
 {% set year = article.date.strftime('%Y') %}
 {% if last_year != year %}
-    <div class="row" id="post-row">
-        <div class="col-md-2">    
-            <h2 class="text-center" id={{ year}}><i class="fa fa-pencil-square-o" id="archives-year-icon"></i><a href="#{{ year }}">{{ year }}</a></h2>
-        </div>
-        <div class="col-md-10">
-            <ul class="list-unstyled" id="archives-ul">
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">    
+            <div class="panel-heading"><i class="fa fa-pencil-square-o">{{ year }}</i></div>
+            <ul class="list-group">
             {% for article in dates %}
             {% if article.date.strftime('%Y') == year %}
-            <li class="text-left" id="archives-list">
+            <li class="list-group-item text-left">
             <div class="row">
             <div class="col-xs-8"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</a></div>
             <div class="col-xs-4"><time class="pull-right" pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></div>
@@ -34,8 +32,9 @@ All Posts · {{ super() }}
             {% endif %}
             {% endfor %}
             </ul>
-        </div>
+        </div>    
     </div>
+</div>
 {% set last_year = year %}
 {% endif %}
 {% endfor %}

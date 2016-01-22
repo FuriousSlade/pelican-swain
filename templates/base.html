@@ -2,6 +2,8 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
         <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, height=device-width, initial-scale=1">
         <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.min.css" />
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" />
@@ -16,6 +18,8 @@
         {% if FEED_ALL_RSS %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
         {% endif %}
+        {% block head %}
+        {% endblock%}
 </head>
 
 <body>
@@ -54,7 +58,7 @@
                 {% block sidebar_left %}
                 {% endblock sidebar_left %}
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8" id="center_page">
                 {% block content %}
                 {% endblock content %}
             </div>
