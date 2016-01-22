@@ -7,11 +7,10 @@ All Posts · {{ super() }}
 
 {% block content %}
 <div class="row">
-    <header class="text-center">
-    <h1>All Posts</h1>
+    <header class="text-center page-header">
+    <h1><a href="{{ SITEURL }}/archives.html">All Posts</a></h1>
     </header>
 </div>
-<hr>
 {% set last_year = 0 %}
 {% for article in dates %}
 {% set year = article.date.strftime('%Y') %}

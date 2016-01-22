@@ -2,7 +2,7 @@ body,
 html {
     height: 100%;
     width: 100%;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 
 #container {
@@ -10,6 +10,17 @@ html {
     margin-bottom: -30px;
 }
 
+#center_page > div > header {
+    border-bottom:3px dotted #F00;
+    border-right:0;
+    border-left:0;
+    width:100%;
+}
+
+/*index*/
+#content {
+    margin-top: 30px;
+}
 
 /*post-list*/
 #posts-list > li > article > div.entry-content > p > img {
@@ -27,21 +38,20 @@ html {
 
 
 /*article*/
-hr {
-    border:3px dotted #F00;
-    border-bottom:0;
-    border-right:0;
-    border-left:0;
-    width:100%;
-}
 #content > article > div.comments {
     margin-top: 50px;
 }
 
-
+/*tags*/
+#center_page > div > div > ul > li > time {
+    padding-right: 5px;
+}
+#center_page > div > div > ul > li > a > span {
+    margin-left: 5px;
+}
 /*sidebar_left*/
 #sidebar_left {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .list-inline li {
     padding-right: 0;
