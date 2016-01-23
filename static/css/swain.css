@@ -3,6 +3,7 @@ html {
     height: 100%;
     width: 100%;
     padding-top: 10px;
+    font-family: Apple LiSung Light;
 }
 
 #container {
@@ -36,12 +37,28 @@ html {
     font-size: 1.5em;
 }
 
+/*Categories*/
+#accordion> div > div > h4 > a {
+    display:block;
+    height:100%;
+    width:100%;
+    text-decoration:none;
+}
+#accordion> div > div > h4 > a > span {
+    margin-left: 5px;
+
+}
 
 /*article*/
 #content > article > div.comments {
     margin-top: 50px;
 }
-
+#container > div.row-fluid {
+    margin-bottom: 35px;
+}
+#content > article > header {
+    padding-top: 1px;
+}
 /*tags*/
 #center_page > div > div > ul > li > time {
     padding-right: 5px;
@@ -67,11 +84,11 @@ html {
     text-align:center;
 }
 #sidebar_left > div > div.panel-heading > i {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 /*sidebar_right*/
 #sidebar_right {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 
@@ -107,4 +124,37 @@ ul.footer-content li {
 }
 .elegant-subtitle {
     text-align: left;
+}
+
+
+/*blockquote*/
+#content > article > div.entry-content > blockquote {
+    border-left: 0;
+    margin: 20px 0 20px 2em;
+    padding: 0 0 0 20px;
+}
+#content > article > div.entry-content > blockquote:before {
+    color: #646464;
+    content: '\f10d';
+    font: 25px FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: -2em;
+    text-decoration: inherit;
+    position:absolute;
+}
+#posts-list > li > article > div.entry-content > blockquote {
+    border-left: 0;
+    margin: 20px 0 20px 2em;
+    padding: 0 0 0 20px;
+}
+#posts-list > li > article > div.entry-content > blockquote:before {
+    color: #646464;
+    content: '\f10d';
+    font: 25px FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: -2em;
+    text-decoration: inherit;
+    position:absolute;
 }
