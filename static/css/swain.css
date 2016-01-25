@@ -2,8 +2,6 @@ body,
 html {
     height: 100%;
     width: 100%;
-    padding-top: 10px;
-    font-family: Apple LiSung Light;
 }
 
 #container {
@@ -20,7 +18,7 @@ html {
 
 /*index*/
 #content {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 /*post-list*/
@@ -51,7 +49,7 @@ html {
 
 /*article*/
 #content > article > div.comments {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 #container > div.row-fluid {
     margin-bottom: 35px;
@@ -68,7 +66,7 @@ html {
 }
 /*sidebar_left*/
 #sidebar_left {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 .list-inline li {
     padding-right: 0;
@@ -88,7 +86,7 @@ html {
 }
 /*sidebar_right*/
 #sidebar_right {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 
