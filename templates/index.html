@@ -4,6 +4,12 @@
     {% include '_includes/dashboard.html' %}
 {% endblock sidebar_left %}
 
+{% block sidebar_right %}
+    {% include '_includes/projects.html' %}
+    {% include '_includes/links.html' %}
+{% endblock sidebar_right%}
+
+
 {% block content %}
 {% if articles %}
     <div id="content" class="row">
@@ -36,10 +42,5 @@
                 {% endif %}
             {% endfor %}
 {% endif %}
-
 {% endblock content %}
 
-{% block sidebar_right %}
-    {% include '_includes/projects.html' %}
-    {% include '_includes/links.html' %}
-{% endblock sidebar_right%}

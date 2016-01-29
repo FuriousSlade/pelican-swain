@@ -57,6 +57,9 @@ html {
 #content > article > header {
     padding-top: 1px;
 }
+#content > article > div.comments {
+    padding-bottom: 1px;
+}
 /*tags*/
 #center_page > div > div > ul > li > time {
     padding-right: 5px;
@@ -93,7 +96,6 @@ html {
 /*Fotter*/
 .push,
 #footer {
-    border-top: 1px solid #00FFFF;
     height: 30px;
     clear: both;
 }

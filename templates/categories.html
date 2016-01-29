@@ -65,3 +65,18 @@ All categories of the {{ SITENAME|striptags|e }} blog.
     </div>
 </div>
 {% endblock content %}
+
+{% block script %}
+{{ super() }}
+<script  language="javascript" type="text/javascript">
+    function uncollapse() {
+            $(window.location.hash).collapse({
+                toggle: true
+            })
+    }
+</script>
+
+<script type="text/javascript" language="JavaScript">
+    uncollapse(); 
+</script>
+{% endblock script %}

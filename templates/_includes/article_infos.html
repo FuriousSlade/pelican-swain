@@ -13,7 +13,7 @@
       {% endif %}
       <div class="category">
               <h5>Category</h5>
-              <p><a class="btn btn-default btn-xs" type="button" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+              <p><a class="btn btn-default btn-xs" type="button" href="{{ SITEURL }}/categories.html#{{ category.slug }}-ref">{{ article.category }}</a></p>
       </div>
       <div class="tags">
         {% if article.tags and article.tags[0]|trim|count > 0 %}
