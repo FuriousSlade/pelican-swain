@@ -4,6 +4,15 @@
 All Tags · {{ super() }}
 {% endblock title %}
 
+{% block meta_tags_in_head %}
+{{ super() }}
+<meta property="og:title" content="All Tags · {{ SITENAME|striptags|e }}"/>
+<meta property="og:url" content="{{ SITEURL }}/tags.html" />
+<meta property="og:description" content="All tags used in the {{ SITENAME|striptags|e }} blog" />
+<meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+{% endblock meta_tags_in_head %}
+
 {% block content %}
 
 <div class="row">

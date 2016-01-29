@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block meta_tags_in_head %}
+{{ super() }}
+<meta property="og:url" content="{{ SITEURL }}" />
+<meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+{% endblock meta_tags_in_head %}
+
+
 {% block sidebar_left %}
     {% include '_includes/dashboard.html' %}
 {% endblock sidebar_left %}
