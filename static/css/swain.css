@@ -46,7 +46,9 @@ html {
     margin-left: 5px;
 
 }
-
+#center_page > div:nth-child(2) > div > ul > li {
+    padding-top: 3px;
+}
 /*article*/
 #content > article > div.comments {
     margin-top: 0px;
