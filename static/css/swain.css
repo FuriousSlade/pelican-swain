@@ -5,7 +5,7 @@ html {
 }
 
 #container {
-    min-height: 100%;
+    min-height: 93%;
     margin-bottom: -30px;
 }
 
@@ -93,7 +93,7 @@ html {
 }
 
 
-/*Fotter*/
+/*Footer*/
 .push,
 #footer {
     height: 30px;

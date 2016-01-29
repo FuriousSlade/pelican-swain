@@ -67,12 +67,9 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% endblock content %}
 
 {% block script %}
-{{ super() }}
 <script  language="javascript" type="text/javascript">
     function uncollapse() {
-            $(window.location.hash).collapse({
-                toggle: true
-            })
+            $(window.location.hash).collapse('show')
     }
 </script>
 
