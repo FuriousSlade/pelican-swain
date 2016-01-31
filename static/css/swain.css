@@ -166,3 +166,17 @@ ul.footer-content li {
 #sidebar_left > div > div.panel-body > nav > div > ul {
     margin-left: -25px;
 }
+
+/*tipue_search*/
+#tipue_search_input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 30px;
+    border-radius: 25px;
+}
+.h01
+{
+     color: red;
+     font-size: 1.5em;
+}
