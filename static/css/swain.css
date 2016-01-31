@@ -160,3 +160,9 @@ ul.footer-content li {
     text-decoration: inherit;
     position:absolute;
 }
+
+
+/*TOC*/
+#sidebar_left > div > div.panel-body > nav > div > ul {
+    margin-left: -25px;
+}
