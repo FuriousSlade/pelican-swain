@@ -30,12 +30,7 @@ Search results for {{ SITENAME|striptags|e }} blog.
 
 
 {% block script %}
-    {% if 'assets' in PLUGINS %}
-    {% include '_includes/minify_tipuesearch.html' with context %}
-    {% else %}
-<script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
-<script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
-    {% endif %}
+
 <script>
 $(document).ready(function() {
      $('#tipue_search_input').tipuesearch({
