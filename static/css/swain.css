@@ -5,8 +5,8 @@ html {
 }
 
 #container {
-    min-height: 93%;
-    margin-bottom: -30px;
+    min-height: 90%;
+    margin-bottom: 0px;
 }
 
 #center_page > div > header {
@@ -102,6 +102,10 @@ html {
 
 
 /*Footer*/
+body > footer.footer {
+    height: 30px;
+    clear: both;
+}
 .push,
 #footer {
     height: 30px;
