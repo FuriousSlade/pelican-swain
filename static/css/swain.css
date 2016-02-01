@@ -20,7 +20,13 @@ html {
 #content {
     margin-top: 0px;
 }
-
+#posts-list > li > article > div.tagged {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+#posts-list > li > article > div.tagged > i {
+    font-size: 1.5em;
+}
 /*post-list*/
 #posts-list > li > article > div.entry-content > p > img {
     display: block;
