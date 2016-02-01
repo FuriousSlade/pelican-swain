@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" />
         <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery-1.12.0.min.js"></script>
         <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/gototop.js"></script>
         <!-- <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" /> -->
         {% if 'assets' in PLUGINS %}
         {% include '_includes/minify_css.html' with context %}
@@ -90,9 +91,15 @@
                 {% endblock sidebar_right %}
             </div>
         </div>
-        <div id="push"></div>
+    </div>
+
+    <!-- go to top -->
+    <div id ="d-top" style="display:none;">
+    <a id ="d-top-a " href="#" title="回到顶部">
+    <i class="fa fa-arrow-circle-up fa-4x"></i></a>
     </div>
     <!-- footer -->
+    <div id="push"></div>
     {% include '_includes/footer.html' %}
     
     {% include '_includes/disqus_scripts.html' %}

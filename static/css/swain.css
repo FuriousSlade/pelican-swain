@@ -180,3 +180,17 @@ ul.footer-content li {
      color: red;
      font-size: 1.5em;
 }
+
+
+
+/*go to top*/
+#d-top {
+      position: fixed;
+      float: right;
+      z-index: 10;
+      right: 20px;
+      bottom: 200px;
+      }
+#d-top i {
+      opacity: 0.8;
+      }
