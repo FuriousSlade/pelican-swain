@@ -12,7 +12,7 @@ pelican theme
 [FuriouesSlade](http://furiousslade.github.io)
 
 ## 注意事项 ##
-Swain/static/images/ 目录下存放了头像 favicon.ico QQ和微信的二维码图片。使用时请自行更换。
+Swain/static/images/ 目录下存放了头像、favicon.ico、QQ和微信的二维码图片。使用时请自行更换。
 
 
 ## Config demo ##
