@@ -119,3 +119,6 @@ Swain/static/images/ 目录下存放了头像 favicon.ico QQ和微信的二维�
 	# disqus
 	DISQUS_SITENAME = ''
 	
+## Screenshot ##
+![](https://github.com/FuriousSlade/pelican-swain/blob/master/pelican-swain-screenshot-01.png?raw=true)
+![](https://github.com/FuriousSlade/pelican-swain/blob/master/pelican-swain-screenshot-02.png?raw=true)
