@@ -55,6 +55,7 @@ html {
 #center_page > div:nth-child(2) > div > ul > li {
     padding-top: 3px;
 }
+
 /*article*/
 #content > article > div.comments {
     margin-top: 0px;
@@ -68,6 +69,11 @@ html {
 #content > article > div.comments {
     padding-bottom: 1px;
 }
+#content > article > div.entry-content > p > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /*tags*/
 #center_page > div > div > ul > li > time {
     padding-right: 5px;
@@ -75,6 +81,7 @@ html {
 #center_page > div > div > ul > li > a > span {
     margin-left: 5px;
 }
+
 /*sidebar_left*/
 #sidebar_left {
     margin-top: 0px;
@@ -95,11 +102,11 @@ html {
 #sidebar_left > div > div.panel-heading > i {
     font-size: 1.3em;
 }
+
 /*sidebar_right*/
 #sidebar_right {
     margin-top: 0px;
 }
-
 
 /*Footer*/
 body > footer.footer {
