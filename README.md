@@ -8,6 +8,9 @@ pelican theme
 
 基本完成。大量抄袭了[Elegant](https://github.com/talha131/pelican-elegant)，Elegant是我用过功能最全面的Pelican theme了。
 
+## 简介 ##
+使用了bootstrap3、fontawesome，评论使用disqus,站内搜索使用了tipuesearch。社交信息对QQ和微信做了处理：点击展示对应的二维码。
+
 ## Live demo ##
 [FuriouesSlade](http://furiousslade.github.io)
 
