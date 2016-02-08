@@ -29,7 +29,7 @@ All Posts · {{ super() }}
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-default">    
-            <div class="panel-heading"><i class="fa fa-pencil-square-o">{{ year }}</i></div>
+            <div class="panel-heading"><i class="fa fa-pencil-square-o"></i><span>{{ year }}</span></div>
             <ul class="list-group">
             {% for article in dates %}
             {% if article.date.strftime('%Y') == year %}
