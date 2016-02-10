@@ -33,12 +33,7 @@ All Posts · {{ super() }}
             <ul class="list-group">
             {% for article in dates %}
             {% if article.date.strftime('%Y') == year %}
-            <li class="list-group-item text-left">
-            <div class="row">
-            <div class="col-xs-8"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</a></div>
-            <div class="col-xs-4"><time class="pull-right" pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></div>
-            </div>
-            </li>
+            <a class="list-group-item" href="{{ SITEURL }}/{{ article.url }}"><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</a>
             {% endif %}
             {% endfor %}
             </ul>

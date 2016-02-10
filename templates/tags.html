@@ -14,7 +14,6 @@ All Tags · {{ super() }}
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-
 <div class="row">
     <header class="page-header text-center">
     <h1><a href="{{ SITEURL }}/tags.html">All Tags</a></h1>
@@ -37,14 +36,13 @@ All Tags · {{ super() }}
     <div class="col-md-12">
         {% for tag, articles in tags|sort %}
         <h2 id="{{ tag.slug }}-ref" class="tag-title">{{ tag }}</h2>
-        <ul class="articles-in-tag list-articles-category list-unstyled">
+        <ul class="articles-in-tag list-articles-category list-unstyled list-group">
             {% for article in articles|sort(reverse = true, attribute = 'date') %}
-            <li><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
+            <a class="list-group-item" href="{{ SITEURL }}/{{ article.url }}"><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
             {% endfor %}
         </ul>
 
         {% endfor %}
     </div>
 </div>
-
 {% endblock content %}

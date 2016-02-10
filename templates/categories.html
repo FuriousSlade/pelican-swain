@@ -18,14 +18,14 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-<div class="row-fluid">
+<div class="row">
     <header class="page-header text-center">
     <h1><a href="{{ SITEURL }}/categories.html">All Categories</a></h1>
     </header>
 </div>
 
 
-<div class="row-fluid">
+<div class="row">
     <div class="col-md-12">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             {% for category, articles in categories %}

@@ -3,12 +3,12 @@
     <div class="panel-body">
       <div class="published">
                 <h5>Published</h5>
-                <p>{{ article.locale_date }}</p>
+                <p><time>{{ article.locale_date }}</time></p>
       </div>
       {% if article.modified %}
       <div class="modified">
                 <h5>Updated</h5>
-                <p>{{ article.locale_modified }}</p>
+                <p><time>{{ article.locale_modified }}</time></p>
       </div>
       {% endif %}
       <div class="category">
