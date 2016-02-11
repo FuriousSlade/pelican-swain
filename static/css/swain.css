@@ -29,7 +29,9 @@ h6,
 .h6 {
   font-size: 12px;
 }
-
+hr {
+    border-top: 3px solid #eeeeee;
+}
 #container {
     min-height: 90%;
     margin-bottom: 0px;
@@ -191,7 +193,9 @@ body > nav > div > div.navbar-header > button > i {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
+#center_page > div > div > p {
+    color: black;
+}
 /*Footer*/
 body > footer.footer {
     height: 30px;
@@ -264,8 +268,14 @@ span.h01 {
     color: red;
     font-size: 1.5em;  
 }
-
-
+#tipue_search_content > div:nth-child(3n) > a {
+    color: #2196f3;
+}
+#tipue_search_content > div,
+#tipue_search_content_title,
+#tipue_search_results_count {
+    color: black;
+}
 /*go to top*/
 #d-top {
       position: fixed;
