@@ -13,7 +13,7 @@ Pelican 模板
 基本完成。大量抄袭了[Elegant](https://github.com/talha131/pelican-elegant)，Elegant是我用过功能最全面的Pelican theme了。
 
 ## 简介 ##
-使用了bootstrap3、fontawesome，评论使用disqus,站内搜索使用了tipuesearch。社交信息对QQ和微信做了处理：点击展示对应的二维码。
+使用了bootstrap3、fontawesome，评论可使用disqus或者国内的**多说**,站内搜索使用了tipuesearch。社交信息对QQ和微信做了处理：点击展示对应的二维码。
 
 ## Live demo ##
 [FuriouesSlade](http://furiousslade.github.io)
@@ -125,6 +125,9 @@ Swain/static/images/ 目录下存放了头像、favicon.ico、QQ和微信的二�
 	
 	# disqus
 	DISQUS_SITENAME = ''
+	
+	# duoshuo
+	DUOSHUO_SHORTNAME = ''
 	
 ## Screenshot ##
 ![](https://github.com/FuriousSlade/pelican-swain/blob/master/pelican-swain-screenshot-01.png?raw=true)
