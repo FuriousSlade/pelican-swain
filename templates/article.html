@@ -63,6 +63,15 @@
             </div>
     </div>
     {% endif %}
+
+    {% if DUOSHUO_SHORTNAME %}
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {% include '_includes/duoshuo.html' %}
+      </div>
+    </div>
+    {% endif %}
+
   </article>
 </section>
 {% endblock %}
