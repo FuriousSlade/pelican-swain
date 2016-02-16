@@ -1,9 +1,8 @@
-# [Pelican-Swain](https://github.com/FuriousSlade/Swain) #
+# [Pelican-Swain](https://github.com/FuriousSlade/pelican-swain) #
 Pelican theme
 
 Pelican 模板
 
-[https://github.com/FuriousSlade/Swain](https://github.com/FuriousSlade/pelican-swain)
 
 >No zuo no die, why you try ?
 >You zuo you die, don't ask me why.
