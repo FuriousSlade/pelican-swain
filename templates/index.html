@@ -34,12 +34,12 @@
                             {% endif %}
                             {% if article.category %}
                                 <i class="fa fa-folder-open fa-lg"></i>
-                                <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                                <a class="tagged" href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
                             {% endif %}
                             {% if article.tags %}
                                 <i class="fa fa-tags"></i>
                                 {% for tag in article.tags %}
-                                    <a href="{{ SITEURL }}/tags.html#{{ tag.slug }}-ref">{{ tag }}</a>
+                                    <a class="tagged" href="{{ SITEURL }}/tags.html#{{ tag.slug }}-ref">{{ tag }}</a>
                                 {% endfor %}
                             {% endif %}
                             {% include '_includes/comments.html' %}
