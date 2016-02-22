@@ -25,7 +25,7 @@ All Tags · {{ super() }}
             {% for tag, articles in tags|sort %}
             <li>
             {% set num = articles|count %}
-            <a class="btn btn-default btn-sm animate" type="button" href="#{{ tag.slug }}-ref">{{ tag }}<span class="badge"> {{ num }}</span></a>
+            <a class="btn btn-default btn-sm animate fadeInUp" type="button" href="#{{ tag.slug }}-ref">{{ tag }}<span class="badge"> {{ num }}</span></a>
             </li>
             {% endfor %}
         </ul>
@@ -51,7 +51,6 @@ All Tags · {{ super() }}
 <script type="text/javascript">
     function setAnimate(i){
             var f = document.getElementsByClassName("animate")[0];
-            f.classList.add("fadeInUp");
             f.style.animationDelay = (0+i/10).toString()+"s";
             f.classList.remove("animate");
         };
