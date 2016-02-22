@@ -190,7 +190,9 @@ div.tagged > i {
     margin-top: 0px;
     z-index: 3;
 }
-
+#sidebar_right > div > div.panel-body > div.tags > ul > li > a > span {
+    top: -1px;
+}
 
 /*404*/
 #tipue_search_input_404 {
