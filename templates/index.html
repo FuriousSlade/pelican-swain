@@ -23,7 +23,7 @@
     <div id="content" class="row">
         <ul class="list-group list-unstyled" id="posts-list">
             {% for article in articles_page.object_list %}
-                <li class="list-group-item animate">
+                <li class="list-group-item animate fadeInUp">
                     <article class="hentry">
                         <header>
                             <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
@@ -72,7 +72,6 @@
 <script type="text/javascript">
     function setAnimate(i){
             var f = document.getElementsByClassName("animate")[0];
-            f.classList.add("fadeInUp");
             f.style.animationDelay = (0+i/2).toString()+"s";
             f.classList.remove("animate");
         };
@@ -86,10 +85,5 @@
         };
     };
     window.onload = initAnimate();
-    window.onload = function(){
-            for(var i=0,a;a=document.querySelectorAll("#posts-list > li")[i++];){
-                a.style.opacity = 1;
-            };
-        };
 </script>
 {% endblock script %}
