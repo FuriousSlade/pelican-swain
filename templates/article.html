@@ -76,10 +76,24 @@
 </section>
 {% endblock %}
 
+{% block sidebar_left_div %}
+<div class="col-md-2 hidden-xs hidden-sm" id="sidebar_left">
+  {% include '_includes/toc.html' %}
+</div>
+{% endblock %}
+
 {% block sidebar_right %}
       {% include '_includes/article_infos.html' %}
 {% endblock%}
 
-{% block sidebar_left %}
-      {% include '_includes/toc.html' %}
-{% endblock%}
+{% block script %}
+<script type="text/javascript">
+    function setTocClass(){
+            var f = document.getElementById("toc");
+            f.classList.add("art-toc");
+            f.classList.add("fadeInLeft");
+            f.style.opacity = 1;
+        };
+    window.onload = setTocClass();
+</script>
+{% endblock %}

@@ -64,12 +64,15 @@
         </div>
     </nav>
     <!-- navbar end -->
+    {% block container %}
     <div class="container-fluid" id="container">
         <div class="row-fluid">
+            {% block sidebar_left_div %}
             <div class="col-md-2 fadeInLeft" id="sidebar_left">
                 {% block sidebar_left %}
                 {% endblock sidebar_left %}
             </div>
+            {% endblock %}
             <div class="col-md-8" id="center_page">
                 {% block content %}
                 {% endblock content %}
@@ -80,6 +83,7 @@
             </div>
         </div>
     </div>
+    {% endblock %}
     <!-- Mascot go to top -->
     <a href="#"><img src="/{{ THEME_STATIC_DIR }}/images/umaru.png" class="umaru"></a>
 
