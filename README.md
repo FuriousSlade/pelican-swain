@@ -15,7 +15,7 @@ Pelican 模板
 使用了bootstrap3、fontawesome，评论可使用disqus或者国内的**多说**,站内搜索使用了tipuesearch。社交信息对QQ和微信做了处理：点击展示对应的二维码。
 
 ## Live demo ##
-[FuriouesSlade](http://furiousslade.github.io)
+[chihiro.moe](http://chihiro.moe)
 
 ## 注意事项 ##
 Swain/static/images/ 目录下存放了头像、favicon.ico、QQ和微信的二维码图片。使用时请自行更换。
