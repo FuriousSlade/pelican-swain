@@ -8,7 +8,7 @@ All Posts · {{ super() }}
 {{ super() }}
 <meta property="og:title" content="All Posts · {{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="All Posts · {{ SITENAME|striptags|e }}">
-<meta property="og:url" content="{{ SITEURL }}/archives.html" />
+<meta property="og:url" content="/archives.html" />
 <meta property="og:description" content="Full archives of {{ SITENAME|striptags|e }} blog" />
 <meta name="twitter:description" content="Full archives of {{ SITENAME|striptags|e }} blog">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
@@ -19,7 +19,7 @@ All Posts · {{ super() }}
 {% block content %}
 <div class="row">
     <header class="text-center page-header">
-    <h1><a href="{{ SITEURL }}/archives.html">All Posts</a></h1>
+    <h1><a href="/archives.html">All Posts</a></h1>
     </header>
 </div>
 {% set last_year = 0 %}
@@ -33,7 +33,7 @@ All Posts · {{ super() }}
             <ul class="list-group">
             {% for article in dates %}
             {% if article.date.strftime('%Y') == year %}
-            <a class="list-group-item" href="{{ SITEURL }}/{{ article.url }}"><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</a>
+            <a class="list-group-item" href="/{{ article.url }}"><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</a>
             {% endif %}
             {% endfor %}
             </ul>

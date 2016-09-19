@@ -2,7 +2,7 @@
 
 {% block meta_tags_in_head %}
 {{ super() }}
-<meta property="og:url" content="{{ SITEURL }}" />
+<meta property="og:url" content="/" />
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% endblock meta_tags_in_head %}
@@ -26,7 +26,7 @@
                 <li class="list-group-item animate fadeInUp">
                     <article class="hentry">
                         <header>
-                            <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+                            <h2><a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
                         </header>
                         <div class="tagged">
                             {% if article.locale_date %}
@@ -34,12 +34,12 @@
                             {% endif %}
                             {% if article.category %}
                                 <i class="fa fa-folder-open fa-lg"></i>
-                                <a class="tagged" href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                                <a class="tagged" href="/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
                             {% endif %}
                             {% if article.tags %}
                                 <i class="fa fa-tags"></i>
                                 {% for tag in article.tags %}
-                                    <a class="tagged" href="{{ SITEURL }}/tags.html#{{ tag.slug }}-ref">{{ tag }}</a>
+                                    <a class="tagged" href="/tags.html#{{ tag.slug }}-ref">{{ tag }}</a>
                                 {% endfor %}
                             {% endif %}
                             {% include '_includes/comments.html' %}
@@ -48,7 +48,7 @@
                             {{ article.summary }}
                         </div>
                         <div class="row">
-                        <div class="read-me col-sm-12"><a class="btn btn-success"  type="button" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">Read more</a>
+                        <div class="read-me col-sm-12"><a class="btn btn-success"  type="button" href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">Read more</a>
                         </div>
                         </div>
                         <!-- /.entry-content -->

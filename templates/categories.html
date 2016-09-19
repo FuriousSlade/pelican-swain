@@ -11,7 +11,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% block meta_tags_in_head %}
 {{ super() }}
 <meta property="og:title" content="All Categories · {{ SITENAME|striptags|e }}"/>
-<meta property="og:url" content="{{ SITEURL }}/categories.html" />
+<meta property="og:url" content="/categories.html" />
 <meta property="og:description" content="All categories of the {{ SITENAME|striptags|e }} blog" />
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
@@ -20,7 +20,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% block content %}
 <div class="row">
     <header class="page-header text-center">
-    <h1><a href="{{ SITEURL }}/categories.html">All Categories</a></h1>
+    <h1><a href="/categories.html">All Categories</a></h1>
     </header>
 </div>
 
@@ -42,7 +42,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
                     <div class="panel-body">
                         <ul class="list-unstyled">
                             {% for article in articles %} 
-                            <li><time class="col-md-2 col-xs-12" pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time><a class="col-md-10 col-xs-12" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
+                            <li><time class="col-md-2 col-xs-12" pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time><a class="col-md-10 col-xs-12" href="/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
                             {% endfor %}
                         </ul>
                     </div>
