@@ -333,3 +333,8 @@ span.h01 {
     right: 20px;
     bottom: 20px;
 }
+
+/*dashboard*/
+#sidebar_left > div > div.panel-body {
+    padding: 15px 0px; 
+}
