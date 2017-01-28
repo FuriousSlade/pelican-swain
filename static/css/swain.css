@@ -1,11 +1,12 @@
 body,
 html {
-    height: 100%;
+    height: 95%;
     width: 100%;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA7wDzAPq5LT36AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AIVBRcFtLX3HQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAcElEQVRYw+3XuwqAMAyF4VzU939TB7dKG6cOYhFRhwz/GQOBD86S6LqVkB+zzO93a63i7qeZSaKo6mWWCmhmuYGjTFlhrTWJiLzAXnf6igECBAgQIECAAO/vwS8/xChlp2KAAAECBAgQIECAAAE+zgGmgQ9CadOaLQAAAABJRU5ErkJggg=="),
-        #EFF3FA;
-    background-color: #EFF3FA;
-    z-index: 0;
+    background-color: #EBECEE;
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", sans-serif; 
+    /*z-index: 0;*/
+    /*background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA7wDzAPq5LT36AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AIVBRcFtLX3HQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAcElEQVRYw+3XuwqAMAyF4VzU939TB7dKG6cOYhFRhwz/GQOBD86S6LqVkB+zzO93a63i7qeZSaKo6mWWCmhmuYGjTFlhrTWJiLzAXnf6igECBAgQIECAAO/vwS8/xChlp2KAAAECBAgQIECAAAE+zgGmgQ9CadOaLQAAAABJRU5ErkJggg=="),
+        #EFF3FA;*/
 }
 
 h1,
@@ -36,7 +37,7 @@ hr {
     border-top: 3px solid #eeeeee;
 }
 #container {
-    min-height: 100%;
+    min-height: 95%;
     margin-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
@@ -107,7 +108,6 @@ body > nav > div > div.navbar-header > button > i {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 #posts-list > li > article > div.tagged {
-    padding-top: 5px;
     padding-bottom: 10px;
 }
 #posts-list > li > article > div.tagged > i {
@@ -200,14 +200,6 @@ div.tagged > i {
     top: -1px;
 }
 
-/*404*/
-#tipue_search_input_404 {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#center_page > div > div > p {
-    color: black;
-}
 /*Footer*/
 body > footer.footer {
     height: 30px;
@@ -338,4 +330,11 @@ span.h01 {
     z-index: 10;
     right: 20px;
     bottom: 20px;
+}
+.entry-title a:hover {
+    color: #414141;
+    text-decoration:none;
+}
+.entry-title a {
+    color: #414141;
 }

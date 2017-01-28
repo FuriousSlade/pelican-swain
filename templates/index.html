@@ -24,31 +24,32 @@
         <ul class="list-group list-unstyled" id="posts-list">
             {% for article in articles_page.object_list %}
                 <li class="list-group-item animate fadeInUp">
-                    <article class="hentry">
+                    <article class="entry">
                         <header>
-                            <h2><a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+                            <h2 class="entry-title"><a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
                         </header>
                         <div class="tagged">
-                            {% if article.locale_date %}
-                                <i class="fa fa-calendar"></i><time class="article-li-time">{{ article.locale_date }}</time>
+                            <small><samp>
+                            {% if article.date %}
+                                <time class="article-li-time">{{ article.date|strftime('%b %d, %Y') }}</time>
                             {% endif %}
                             {% if article.category %}
-                                <i class="fa fa-folder-open fa-lg"></i>
-                                <a class="tagged" href="/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                                Category:<a class="tagged" href="/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
                             {% endif %}
                             {% if article.tags %}
-                                <i class="fa fa-tags"></i>
+                                Tag:
                                 {% for tag in article.tags %}
                                     <a class="tagged" href="/tags.html#{{ tag.slug }}-ref">{{ tag }}</a>
                                 {% endfor %}
                             {% endif %}
+                            </samp></small>
                             <!-- {% include '_includes/comments.html' %} -->
                         </div>
                         <div class="entry-content">
                             {{ article.summary }}
                         </div>
                         <div class="row">
-                        <div class="read-me col-sm-12"><a class="btn btn-success"  type="button" href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">Read more</a>
+                        <div class="read-me col-sm-12"><a class="btn btn-success"  type="button" style="float: right;" href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">Read more</a>
                         </div>
                         </div>
                         <!-- /.entry-content -->

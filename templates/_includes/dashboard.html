@@ -1,10 +1,10 @@
 {% if ABOUT_ME %}
-<div class="panel panel-primary">
-    <div class="panel-heading"><i class="fa fa-user"></i></div>
+<div class="panel panel-default">
+    <!-- <div class="panel-heading"><i class="fa fa-user"></i></div> -->
     <div class="panel-body">
       <div class="col-xs-5">
         <img class="img-rounded" src="/theme/images/author.gif" alt="..." width="100%" height="100%"/>
-        {% if AUTHOR %}<h3>{{ AUTHOR }}</h3>{% endif %}
+        {% if AUTHOR %}<h4>{{ AUTHOR }}</h4>{% endif %}
         <ul class="list-inline">
         {% include '_includes/social_info.html' %}
         </ul>

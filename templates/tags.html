@@ -14,11 +14,11 @@ All Tags · {{ super() }}
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-<div class="row">
+<!-- <div class="row">
     <header class="page-header text-center">
     <h1><a href="/tags.html">All Tags</a></h1>
     </header>
-</div>
+</div> -->
 <div class="row">
     <div class="col-md-12">
         <ul class="list-of-tags list-inline">
@@ -51,7 +51,7 @@ All Tags · {{ super() }}
 <script type="text/javascript">
     function setAnimate(i){
             var f = document.getElementsByClassName("animate")[0];
-            f.style.animationDelay = (0+i/10).toString()+"s";
+            f.style.animationDelay = (0+i/20).toString()+"s";
             f.classList.remove("animate");
         };
     var n = document.getElementsByClassName("animate").length;
