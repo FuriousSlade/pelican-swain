@@ -108,7 +108,8 @@ body > nav > div > div.navbar-header > button > i {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 #posts-list > li > article > div.tagged {
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    padding-left: 5px;
 }
 #posts-list > li > article > div.tagged > i {
     font-size: 1.5em;

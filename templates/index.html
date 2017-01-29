@@ -33,7 +33,7 @@
                             {% if article.date %}
                                 <time class="article-li-time">{{ article.date|strftime('%b %d, %Y') }}</time>
                             {% endif %}
-                            {% if article.category %}
+<!--                             {% if article.category %}
                                 Category:<a class="tagged" href="/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
                             {% endif %}
                             {% if article.tags %}
@@ -41,7 +41,7 @@
                                 {% for tag in article.tags %}
                                     <a class="tagged" href="/tags.html#{{ tag.slug }}-ref">{{ tag }}</a>
                                 {% endfor %}
-                            {% endif %}
+                            {% endif %} -->
                             </samp></small>
                             <!-- {% include '_includes/comments.html' %} -->
                         </div>

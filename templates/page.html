@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title|striptags }}{% endblock %}
+
+{% block meta_tags_in_head %}
+{{ super() }}
+{% if page.tags or page.category or page.keywords %}
+<meta name="keywords" content="{{ [page.tags|join(', '), page.category, page.keywords]|join(', ') }}" />
+{% endif %}
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+<section id="content" class="body fadeInUp">
+  <page>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <header>
+          <h2 class="entry-title">
+            <a href="/{{ page.url }}" rel="bookmark"
+               title="Permalink to {{ page.title|striptags }}">{{ page.title }}</a></h2>
+        </header>
+        <hr/>
+        <div class="entry-content">
+          {{ page.content }}
+        </div><!-- /.entry-content -->
+        {% if DISQUS_SITENAME and SITEURL and page.status != "draft" %}
+        <div class="comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              var disqus_shortname = '{{ DISQUS_SITENAME }}';
+              var disqus_config = function () {
+                  this.page.url = '{{ SITEURL }}/{{ page.url }}';
+                  this.page.identifier = '/{{ page.url }}';
+                  this.page.title = '{{ page.title|striptags }}';
+              };
+              (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                  var d = document, s = d.createElement('script');
+                  s.src = '//' + disqus_shortname + '.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+        {% endif %}
+    </div>
+  </div>      
+    {% if page.related_posts %}
+    <div class="panel panel-default">
+      <div class="panel-heading">Related posts</div>
+      <div class="panel-body">
+        <ul class="list-unstyled">
+        {% for related_post in page.related_posts %}
+        <li><a href="/{{ related_post.url }}">{{ related_post.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if DUOSHUO_SHORTNAME %}
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {% include '_includes/duoshuo.html' %}
+      </div>
+    </div>
+    {% endif %}
+
+  </page>
+</section>
+{% endblock %}
