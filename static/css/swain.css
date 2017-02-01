@@ -3,6 +3,7 @@ html {
     height: 95%;
     width: 100%;
     background-color: #EBECEE;
+    -webkit-font-smoothing: auto;
     font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", sans-serif; 
     /*z-index: 0;*/
     /*background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA7wDzAPq5LT36AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AIVBRcFtLX3HQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAcElEQVRYw+3XuwqAMAyF4VzU939TB7dKG6cOYhFRhwz/GQOBD86S6LqVkB+zzO93a63i7qeZSaKo6mWWCmhmuYGjTFlhrTWJiLzAXnf6igECBAgQIECAAO/vwS8/xChlp2KAAAECBAgQIECAAAE+zgGmgQ9CadOaLQAAAABJRU5ErkJggg=="),
