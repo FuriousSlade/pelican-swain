@@ -1,16 +1,14 @@
 {% if ABOUT_ME %}
-<div class="panel panel-default">
+<div class="panel panel-default dashboard">
     <!-- <div class="panel-heading"><i class="fa fa-user"></i></div> -->
     <div class="panel-body">
-      <div class="col-xs-5">
-        <img class="img-rounded" src="/theme/images/author.gif" alt="..." width="100%" height="100%"/>
+      <div class="col-xs-12">
+        <img class="img-rounded" src="/theme/images/author.jpeg" alt="..." width="100%" height="100%"/>
         {% if AUTHOR %}<h4>{{ AUTHOR }}</h4>{% endif %}
+        <p>{{ABOUT_ME}}</p>
         <ul class="list-inline">
         {% include '_includes/social_info.html' %}
         </ul>
-      </div>
-      <div class="col-xs-7">
-        {{ABOUT_ME}}
       </div>
     </div>
 </div>

@@ -8,9 +8,11 @@
 {% endblock meta_tags_in_head %}
 
 
-{% block sidebar_left %}
+{% block sidebar_left_div %}
+<div class="col-md-2 fadeInLeft" id="sidebar_left">
     {% include '_includes/dashboard.html' %}
-{% endblock sidebar_left %}
+</div>
+{% endblock %}
 
 {% block sidebar_right %}
     {% include '_includes/projects.html' %}
@@ -22,7 +24,13 @@
 {% if articles %}
     <div id="content" class="row">
         <ul class="list-group list-unstyled" id="posts-list">
-            {% for article in articles_page.object_list %}
+        {% set paginator_articles = articles|sort(reverse=True,attribute='modified') %}
+        {% set offset = (articles_page.number - 1) * DEFAULT_PAGINATION %}
+        {% set end = DEFAULT_PAGINATION * articles_page.number %}
+        {% if end >= paginator_articles|length %}
+            {% set end = paginator_articles|length + 1 %}
+        {% endif %}
+            {% for article in paginator_articles[offset:end] %}
                 <li class="list-group-item animate fadeInUp">
                     <article class="entry">
                         <header>
@@ -31,7 +39,13 @@
                         <div class="tagged">
                             <small><samp>
                             {% if article.date %}
-                                <time class="article-li-time">{{ article.date|strftime('%b %d, %Y') }}</time>
+                                <time class="article-li-time">
+                                {% if article.modified %}
+                                    {{ article.modified|strftime('%b %d, %Y') }}
+                                {% else %}
+                                    {{ article.date|strftime('%b %d, %Y') }}
+                                {% endif %}
+                                </time>
                             {% endif %}
 <!--                             {% if article.category %}
                                 Category:<a class="tagged" href="/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>

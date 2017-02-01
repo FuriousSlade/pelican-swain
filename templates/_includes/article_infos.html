@@ -31,7 +31,7 @@
       {% if article.authors %}
       <address class="vcard author">
                 By {% for author in article.authors %}
-      <a class="url fn" href="/{{ author.url }}">{{ author }}</a>
+      <a href="mailto:{{ AUTHOR_EMAIL }}">{{ author }}</a>
         {% endfor %}
       </address>
       {% endif %}

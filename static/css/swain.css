@@ -175,22 +175,6 @@ div.tagged > i {
 .list-inline i {
     font-size: 1.3em;
 }
-#sidebar_left > div > div.panel-body {
-    padding: 15px 0px; 
-}
-#sidebar_left > div > div.panel-body > ul > li > div {
-    height: 220px;
-    width: 200px;
-}
-#sidebar_left > div > div.panel-body > ul > li > div > h3 {
-    text-align:center;
-}
-#sidebar_left > div > div.panel-heading > i {
-    font-size: 1.3em;
-}
-#sidebar_left > div > div.panel-body > div {
-    padding-right: 5px;
-}
 
 /*sidebar_right*/
 #sidebar_right {
@@ -200,7 +184,11 @@ div.tagged > i {
 #sidebar_right > div > div.panel-body > div.tags > ul > li > a > span {
     top: -1px;
 }
-
+/*dashboard*/
+div.dashboard > div > div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 /*Footer*/
 body > footer.footer {
     height: 30px;
@@ -332,6 +320,7 @@ span.h01 {
     right: 20px;
     bottom: 20px;
 }
+
 .entry-title a:hover {
     color: #414141;
     text-decoration:none;
