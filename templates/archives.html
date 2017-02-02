@@ -17,30 +17,15 @@ All Posts · {{ super() }}
 
 
 {% block content %}
-<!-- <div class="row">
-    <header class="text-center page-header">
-    <h1><a href="/archives.html">All Posts</a></h1>
-    </header>
-</div> -->
-{% set last_year = 0 %}
-{% for article in dates %}
-{% set year = article.date.strftime('%Y') %}
-{% if last_year != year %}
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-default">    
-            <div class="panel-heading"><span>{{ year }}</span></div>
             <ul class="list-group">
             {% for article in dates %}
-            {% if article.date.strftime('%Y') == year %}
             <a class="list-group-item" href="/{{ article.url }}"><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</a>
-            {% endif %}
             {% endfor %}
             </ul>
         </div>    
     </div>
 </div>
-{% set last_year = year %}
-{% endif %}
-{% endfor %}
 {% endblock content %}
