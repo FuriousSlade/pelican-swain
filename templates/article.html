@@ -57,6 +57,23 @@
     </div>
     {% endif %}
 
+    {% if GENTIE %}
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+        <script>
+          var cloudTieConfig = {
+            url: document.location.href, 
+            sourceId: "/{{ article.url }}",
+            productKey: "c85d69d7fca1465bb661e900cc0d2a5e",
+            target: "cloud-tie-wrapper"
+          };
+        </script>
+        <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+      </div>
+    </div>
+    {% endif %}
+
     {% if DUOSHUO_SHORTNAME %}
     <div class="panel panel-default">
       <div class="panel-body">

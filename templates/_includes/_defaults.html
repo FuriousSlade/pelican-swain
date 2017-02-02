@@ -30,3 +30,9 @@ PROJECTS = [{
 {% else %}
 {% set PROJECTS = PROJECTS %}
 {% endif %}
+
+{% if not GENTIE %}
+{% set GENTIE = False %}
+{% else %}
+{% set GENTIE = GENTIE %}
+{% endif %}
