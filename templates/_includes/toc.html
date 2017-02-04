@@ -1,11 +1,25 @@
 {% if article.toc %}
 <div id="toc">
-<div class="panel panel-default">
-  <!-- <div class="panel-heading"><i class="fa fa-list-ul"></i></div> -->
-  <div class="panel-body nav">
-    {{ article.toc }}
+  <div class="panel panel-default">
+    <div class="panel-body nav">
+    {% if article.series %}
+      <ul class="parts">
+        {% for part_article in article.series.all %}
+          <li {% if part_article == article %}class="active"{% endif %}>
+            <a href='{{ SITEURL }}/{{ part_article.url }}'>
+              {{ part_article.title }}
+            </a>
+            {% if part_article == article %}
+              {{ article.toc }}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {{ article.toc }}
+    {% endif %}
+    </div>
   </div>
-</div>
 </div>
 <script type="text/javascript">
   $('body').scrollspy();

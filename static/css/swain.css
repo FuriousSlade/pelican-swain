@@ -252,13 +252,26 @@ blockquote > p {
     line-height: 1.5em;
 }
 
+/*PARTS*/
+.parts {
+    list-style-type: none;
+    margin-left: -40px;
+}
+.parts a {
+    color: #444444;
+}
+.parts a:hover,
+.parts a:focus {
+    color: #444444;
+    text-decoration:none;
+}
 /*TOC*/
 #toc {
     opacity: 0;
 }
 .toc {
     overflow-y: auto;
-    margin-left: -10px;
+    margin-left: -5px;
 }
 .art-toc {
     position: fixed;
@@ -324,7 +337,8 @@ span.h01 {
     bottom: 20px;
 }
 
-.entry-title a:hover {
+.entry-title a:hover,
+.entry-title a:focus {
     color: #414141;
     text-decoration:none;
 }
