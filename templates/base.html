@@ -86,7 +86,9 @@
                       </ul>
                     </li>                    
                 </ul>
-                <form class="navbar-search navbar-form navbar-right" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query form-control" placeholder="Search" name="q" id="tipue_search_input"></form>
+                <form class="navbar-search navbar-form navbar-right" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+                  <input type="text" class="search-query form-control" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form>
             </div>
         </div>
     </nav>
@@ -137,6 +139,9 @@
 </body>
 </html>
 <script type="text/javascript">
+  function validateForm(query) {
+    return (query.length > 0);
+  };
 var dropdownStatus = false
 $(document).ready(function(){
     $("#bs-example-navbar-collapse-1").on('shown.bs.collapse', function() {

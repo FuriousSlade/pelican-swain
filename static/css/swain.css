@@ -287,7 +287,9 @@ blockquote > p {
 div.toc > ul > li > ul {
     display: none;
 }
-
+.toc a {
+    color: #444444;
+}
 li.active > ul {
     display: block !important;
 }
