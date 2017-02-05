@@ -22,6 +22,21 @@
         <div class="entry-content">
           {{ article.content }}
         </div><!-- /.entry-content -->
+        {% if article.series %}
+        <div>
+        {% if article.series.previous.url %}
+          <a class="btn btn-default" style="float:left;width:100px" href="/{{ article.series.previous.url }}">
+            Previous
+          </a>
+        {% endif %}
+        {% if article.series.next.url %}
+          <a class="btn btn-default" style="float:right;width:100px" href="/{{ article.series.next.url }}">
+            Next
+          </a>
+        {% endif %}
+        </div>
+        {% endif %}
+        
         {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
         <div class="comments">
           <div id="disqus_thread"></div>
