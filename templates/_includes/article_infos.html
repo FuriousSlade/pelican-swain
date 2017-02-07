@@ -13,14 +13,14 @@
       {% endif %}
       <div class="category">
               <h5>Category</h5>
-              <p><a class="btn btn-default btn-xs" type="button" href="/categories.html#{{ category.slug }}-ref">{{ article.category }}</a></p>
+              <p><a class="btn btn-default btn-xs" style="text-transform:none" type="button" href="/categories.html#{{ category.slug }}-ref">{{ article.category }}</a></p>
       </div>
       <div class="tags">
         {% if article.tags and article.tags[0]|trim|count > 0 %}
             <h5>Tags</h5>
             <ul class="list-inline list-of-tags tags-in-article">
                 {% for tag in article.tags|sort %}
-                <li><a class="btn btn-default btn-xs" type="button" href="/tags.html#{{ tag.slug }}-ref">{{ tag }}
+                <li><a class="btn btn-default btn-xs" style="text-transform:none" type="button" href="/tags.html#{{ tag.slug }}-ref">{{ tag }}
                     {% for aTag, tagged_articles in tags if aTag == tag %}
                     <span class="badge">{{ tagged_articles|count }}</span>
                     {% endfor %}</a></li>
