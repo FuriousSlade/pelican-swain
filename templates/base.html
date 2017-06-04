@@ -114,7 +114,7 @@
     </div>
     {% endblock %}
     <!-- Mascot go to top -->
-    <a href="#"><img src="/{{ THEME_STATIC_DIR }}/images/umaru02.png" class="umaru"></a>
+    <a href="#"><img id="go_top_logo" src="/{{ THEME_STATIC_DIR }}/images/umaru02.png" class="umaru"></a>
 
     <!-- BAIDU_TONGJI -->
     {% if BAIDU_TONGJI %}
@@ -142,21 +142,25 @@
   function validateForm(query) {
     return (query.length > 0);
   };
-var dropdownStatus = false
-$(document).ready(function(){
-    $("#bs-example-navbar-collapse-1").on('shown.bs.collapse', function() {
-        $('.dropdown-toggle').dropdown('toggle');
-        dropdownStatus = true;
-    });
-    $(".dropdown-toggle").mouseenter(function(){
-        $('.dropdown-toggle').dropdown('toggle');
-        dropdownStatus = true;
-    });
-    $("#container").mouseenter(function(){
-        if (dropdownStatus == true) {
-            $('.dropdown-toggle').dropdown('toggle');
-            dropdownStatus = false;
-        };
-    });    
-});
+  var dropdownStatus = false
+  $(document).ready(function(){
+      $("#bs-example-navbar-collapse-1").on('shown.bs.collapse', function() {
+          $('.dropdown-toggle').dropdown('toggle');
+          dropdownStatus = true;
+      });
+      $(".dropdown-toggle").mouseenter(function(){
+          $('.dropdown-toggle').dropdown('toggle');
+          dropdownStatus = true;
+      });
+      $("#container").mouseenter(function(){
+          if (dropdownStatus == true) {
+              $('.dropdown-toggle').dropdown('toggle');
+              dropdownStatus = false;
+          };
+      });    
+  });
+  var character_list = [{"img_url":"/{{ THEME_STATIC_DIR }}/images/umaru02.png"},{"img_url":"/{{ THEME_STATIC_DIR }}/images/kanna02.png"}];
+  var random_value=parseInt(Math.random()*2);
+  var character=character_list[random_value];
+  document.getElementById("go_top_logo").src=character["img_url"];
 </script>
