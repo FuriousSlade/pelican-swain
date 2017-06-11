@@ -1,6 +1,9 @@
-body,
 html {
-    height: 95%;
+    min-height: 100%;
+}
+body {
+    position: absolute;
+    min-height: 100%;
     width: 100%;
     background-color: #EBECEE;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -38,7 +41,7 @@ hr {
     border-top: 3px solid #eeeeee;
 }
 #container {
-    min-height: 95%;
+    /*min-height: 100%;*/
     margin-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
@@ -96,6 +99,7 @@ body > nav > div > div.navbar-header > button > i {
 /*index*/
 #center_page {
     z-index: 2;
+    padding-bottom: 20px;
 }
 #content {
     margin-top: 0px;
@@ -192,39 +196,13 @@ div.dashboard > div > div {
 }
 /*Footer*/
 body > footer.footer {
-    height: 30px;
-    clear: both;
-}
-.push,
-#footer {
-    height: 30px;
-    clear: both;
-}
-ul.footer-content {
-    list-style: none;
-    margin: -1px 0 0 0;
-    padding: 5px 5px 0;
-    display: table;
-    height: 30px;
     width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-ul.footer-content li {
-    padding-left: 5px;
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-}
-.swain-power {
-    text-align: right;
-}
-.swain-license {
-    text-align: left;
-}
-.swain-subtitle {
-    text-align: left;
+    /*padding: 5px;*/
+    /*margin: 0 auto;*/
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
 }
 
 
@@ -268,6 +246,7 @@ blockquote > p {
 /*TOC*/
 #toc {
     opacity: 0;
+    width: 215px;
 }
 .toc {
     overflow-y: auto;
@@ -275,7 +254,6 @@ blockquote > p {
 }
 .art-toc {
     position: fixed;
-    width: 16.66666667%;
     padding-left: 0px;
     padding-right: 30px;
     opacity: 1 !important;

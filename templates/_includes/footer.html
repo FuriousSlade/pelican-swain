@@ -1,16 +1,13 @@
 <footer class="footer">
-<div id="footer">
-    <ul class="footer-content">
-        {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
-        {% if SITESUBTITLE %}
-        <li class="swain-subtitle"><span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}</li>
-        {% endif %}
-        {% from '_includes/_defaults.html' import SITE_LICENSE with context %}
-        {% if SITE_LICENSE %}
-        <li class="swain-license"><i class="fa fa-copyright" aria-hidden="true"></i>{{ SITE_LICENSE }}</li>
-        {% endif %}
-        <li class="swain-power"><i class="fa fa-map-signs"></i> Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>.
-        </li>
-    </ul>
+<div id="footer" class="text-center">
+    {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
+    {% if SITESUBTITLE %}
+    <span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}
+    {% endif %}
+    {% from '_includes/_defaults.html' import SITE_LICENSE with context %}
+    {% if SITE_LICENSE %}
+    {{ SITE_LICENSE }}
+    {% endif %}
+    Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>.
 </div>
 </footer>
