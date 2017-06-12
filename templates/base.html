@@ -60,7 +60,7 @@
                 <a class="navbar-brand" href="/">{{ SITENAME }}</a>
             </div>
 
-            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
  <!--                    <li {% if page_name == 'index' %} class="active"{% endif %}><a href="/">Home</a></li>
                     {% if DISPLAY_PAGES_ON_MENU %}
@@ -144,7 +144,19 @@
   };
   var dropdownStatus = false
   $(document).ready(function(){
-      $("#bs-example-navbar-collapse-1").on('shown.bs.collapse', function() {
+      $(function() {
+        $(window).scroll(function() {
+          if($(this).scrollTop()>20) {
+            $("body > nav").css("background-color", "rgba(255, 255, 255, 0.5)");
+          } else {
+            $("body > nav").css("background-color", "rgba(255, 255, 255, 1)");
+          }
+        });
+      });
+      $("body > nav").mouseover(function() {
+        $(this).css("background-color", "rgba(255, 255, 255, 1)");
+      });
+      $("#navbar-collapse-1").on('shown.bs.collapse', function() {
           $('.dropdown-toggle').dropdown('toggle');
           dropdownStatus = true;
       });
