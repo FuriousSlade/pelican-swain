@@ -133,6 +133,12 @@ body > nav > div > div.navbar-header > button > i {
 div.tagged > i {
     padding: 0px 5px;
 }
+#posts-list > li > article > div.entry-content > h1:nth-child(1),
+h2:nth-child(1),
+h3:nth-child(1),
+h4:nth-child(1) {
+    margin-top: 0px;
+}
 
 /*Categories*/
 #accordion> div > div > h4 > a {
