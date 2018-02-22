@@ -209,26 +209,11 @@ body > footer.footer {
 
 /*blockquote*/
 blockquote {
-    border-left: 0;
-    margin: 20px 0 20px 2em;
-    padding: 0 0 0 20px;
-}
-blockquote:before {
-    color: #646464;
-    content: '\f10d';
-    font: 25px FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    margin-left: -2em;
-    text-decoration: inherit;
-    position:absolute;
+    border-left: 3px solid #55acee;
 }
 blockquote > p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-variant: normal;
-    text-transform: none;
-    font-size: inherit;
-    line-height: 1.5em;
+    font-style: oblique;
 }
 
 /*PARTS*/
