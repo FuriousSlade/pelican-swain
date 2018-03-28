@@ -134,9 +134,11 @@ div.tagged > i {
     padding: 0px 5px;
 }
 #posts-list > li > article > div.entry-content > h1:nth-child(1),
-h2:nth-child(1),
-h3:nth-child(1),
-h4:nth-child(1) {
+#posts-list > li > article > div.entry-content > h2:nth-child(1),
+#posts-list > li > article > div.entry-content > h3:nth-child(1),
+#posts-list > li > article > div.entry-content > h4:nth-child(1),
+#posts-list > li > article > div.entry-content > h5:nth-child(1),
+#posts-list > li > article > div.entry-content > h6:nth-child(1) {
     margin-top: 0px;
 }
 
@@ -174,6 +176,17 @@ h4:nth-child(1) {
 }
 #center_page > div > div > div > ul > a > time {
     padding-right: 10px;
+}
+
+/*article*/
+#content > article > div > div > div.entry-content > h1,
+#content > article > div > div > div.entry-content > h2,
+#content > article > div > div > div.entry-content > h3,
+#content > article > div > div > div.entry-content > h4,
+#content > article > div > div > div.entry-content > h5,
+#content > article > div > div > div.entry-content > h6 {
+    margin-top: 20px;
+    margin-bottom: 20px
 }
 
 /*sidebar_left*/
