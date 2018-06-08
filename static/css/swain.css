@@ -7,7 +7,8 @@ body {
     width: 100%;
     background-color: #EBECEE;
     -webkit-font-smoothing: subpixel-antialiased;
-    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", sans-serif; 
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #464646;
     /*z-index: 0;*/
     /*background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA7wDzAPq5LT36AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AIVBRcFtLX3HQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAcElEQVRYw+3XuwqAMAyF4VzU939TB7dKG6cOYhFRhwz/GQOBD86S6LqVkB+zzO93a63i7qeZSaKo6mWWCmhmuYGjTFlhrTWJiLzAXnf6igECBAgQIECAAO/vwS8/xChlp2KAAAECBAgQIECAAAE+zgGmgQ9CadOaLQAAAABJRU5ErkJggg=="),
         #EFF3FA;*/
@@ -28,14 +29,17 @@ h3,
 h4,
 .h4 {
   font-size: 18px;
+  font-weight: 600;
 }
 h5,
 .h5 {
   font-size: 14px;
+  font-weight: 600;
 }
 h6,
 .h6 {
   font-size: 12px;
+  font-weight: 600;
 }
 hr {
     border-top: 3px solid #eeeeee;
@@ -185,8 +189,9 @@ div.tagged > i {
 #content > article > div > div > div.entry-content > h4,
 #content > article > div > div > div.entry-content > h5,
 #content > article > div > div > div.entry-content > h6 {
-    margin-top: 20px;
-    margin-bottom: 20px
+    margin-top: -50px;
+    margin-bottom: 20px;
+    padding-top: 70px;
 }
 
 /*sidebar_left*/
