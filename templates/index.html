@@ -9,7 +9,7 @@
 
 
 {% block sidebar_left_div %}
-<div class="col-md-2 fadeInLeft hidden-xs hidden-sm" id="sidebar_left">
+<div class="col-md-2 hidden-xs hidden-sm" id="sidebar_left">
     {% include '_includes/dashboard.html' %}
 </div>
 {% endblock %}
@@ -31,7 +31,7 @@
             {% set end = paginator_articles|length + 1 %}
         {% endif %}
             {% for article in paginator_articles[offset:end] %}
-                <li class="list-group-item animate fadeInUp">
+                <li class="list-group-item animate">
                     <article class="entry">
                         <header>
                             <h2 class="entry-title"><a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>

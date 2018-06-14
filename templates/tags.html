@@ -25,7 +25,7 @@ All Tags · {{ super() }}
             {% for tag, articles in tags|sort %}
             <li>
             {% set num = articles|count %}
-            <a class="btn btn-default btn-sm animate fadeInUp" style="text-transform:none" type="button" href="#{{ tag.slug }}-ref">{{ tag }}<span class="badge"> {{ num }}</span></a>
+            <a class="btn btn-default btn-sm animate" style="text-transform:none" type="button" href="#{{ tag.slug }}-ref">{{ tag }}<span class="badge"> {{ num }}</span></a>
             </li>
             {% endfor %}
         </ul>

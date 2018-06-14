@@ -97,7 +97,7 @@
     <div class="container-fluid" id="container" style="max-width: 1280px">
         <div class="row-fluid">
             {% block sidebar_left_div %}
-            <div class="col-md-2 fadeInLeft" id="sidebar_left">
+            <div class="col-md-2" id="sidebar_left">
                 {% block sidebar_left %}
                 {% endblock sidebar_left %}
             </div>
@@ -106,7 +106,7 @@
                 {% block content %}
                 {% endblock content %}
             </div>
-            <div class="col-md-2 fadeInRight" id="sidebar_right">
+            <div class="col-md-2" id="sidebar_right">
                 {% block sidebar_right %}
                 {% endblock sidebar_right %}
             </div>
@@ -152,6 +152,13 @@
             $("body > nav").css("background-color", "rgba(255, 255, 255, 1)");
           }
         });
+        if (document.body.clientWidth < 768) {
+          var openddt = $(".dropdown").children('.dropdown-toggle');
+          openddt.attr('data-toggle', '');
+          openddt.click(function () {
+            $(this).siblings(".dropdown-menu").toggle();
+          });
+        }
       });
       $("body > nav").mouseover(function() {
         $(this).css("background-color", "rgba(255, 255, 255, 1)");
@@ -165,7 +172,7 @@
           dropdownStatus = true;
       });
       $("#container").mouseenter(function(){
-          if (dropdownStatus == true) {
+          if (dropdownStatus == true && document.body.clientWidth >= 768) {
               $('.dropdown-toggle').dropdown('toggle');
               dropdownStatus = false;
           };
